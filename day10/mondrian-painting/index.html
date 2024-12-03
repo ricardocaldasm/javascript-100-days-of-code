@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+      .container {
+        border: 0;
+        padding: 0;
+        margin: 0;
+        background-color: black;
+        width: 748px;
+        height: 748px;
+        display: grid;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 155px 22px;
+        gap: 9px;
+      }
+
+      .square {
+        background-color: #f0f1ec;
+      }
+
+      .one {
+        background-color: #e72f24;
+      }
+
+      .two {
+        grid-column: span 3;
+      }
+
+      .three {
+        grid-row: span 2;
+      }
+
+      .four {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+
+      .six {
+        grid-row: span 2;
+      }
+
+      .eight {
+        background-color: #f9d01e;
+      }
+
+      .nine {
+        background-color: #232629;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="square one"></div>
+      <div class="square two"></div>
+      <div class="square three"></div>
+      <div class="square four"></div>
+      <div class="square five"></div>
+      <div class="square six"></div>
+      <div class="square seven"></div>
+      <div class="square eight"></div>
+      <div class="square nine"></div>
+    </div>
+  </body>
+</html>

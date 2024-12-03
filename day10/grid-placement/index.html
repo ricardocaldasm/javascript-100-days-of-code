@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1.5fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3rem;
+      }
+      .item{
+        background-color: lightblue;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <title>Grid Placement</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item cowboy">🤠</div>
+      <div class="item astronaut">👨‍🚀</div>
+      <div class="item book">📖</div>
+    </div>
+  </body>
+</html>

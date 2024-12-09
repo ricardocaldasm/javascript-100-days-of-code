@@ -1,11 +1,17 @@
-function test() {
-  var a = "3";
-  var b = "8";
+var a = "3";
+var b = "8";
 
-  var c = a
-  a = b
-  b = c
+var c = a;
+a = b;
+b = c;
 
-  console.log("a is " + a);
-  console.log("b is " + b);
-}
+console.log("a is " + a);
+console.log("b is " + b);
+
+var myName = "Ricardo";
+console.log(myName.length);
+console.log(myName.slice(0,1))
+// comment code
+/* comment
+code */
+

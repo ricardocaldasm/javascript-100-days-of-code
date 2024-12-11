@@ -14,4 +14,3 @@ console.log(myName.slice(0,1))
 // comment code
 /* comment
 code */
-

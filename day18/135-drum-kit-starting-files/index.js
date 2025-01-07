@@ -1,5 +1,5 @@
 function handleClick() {
-  const audio = new Audio("day18/135-drum-kit-starting-files/crash.mp3");
+  const audio = new Audio("crash.mp3");
   audio.play();
 }
 

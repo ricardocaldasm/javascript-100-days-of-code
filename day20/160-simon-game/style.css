@@ -1,0 +1,41 @@
+body {
+  text-align: center;
+  background-color: #011f3f;
+}
+
+#level-title {
+  font-family: "Press Start 2P", serif;
+  font-size: 3rem;
+  color: #fef2bf;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  margin: 25px;
+  height: 200px;
+  width: 200px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 20%;
+}
+
+#green {
+  background-color: green;
+}
+
+#red {
+  background-color: red;
+}
+
+#yellow {
+  background-color: yellow;
+}
+
+#blue {
+  background-color: blue;
+}

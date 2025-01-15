@@ -28,6 +28,5 @@ function playSound(name) {
   gameAudio.play();
 }
 
-function animatePress() {
-  currentColor;
+function animatePress(currentColor) { 
 }

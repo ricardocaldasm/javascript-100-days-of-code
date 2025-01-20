@@ -1,17 +1,20 @@
+/* Geral */
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #011f3f;
+  font-family: "Press Start 2P", serif;
+  user-select: none; /* Impede seleção de texto */
 }
 
 #level-title {
-  font-family: "Press Start 2P", serif;
   font-size: 3rem;
   text-align: center;
   color: #fef2bf;
-  margin: 40px 0px;
+  margin: 40px 0;
+  transition: color 0.3s ease-in-out;
 }
 
 .container {
@@ -19,9 +22,10 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 20px;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
+/* Botões de cor */
 .btn {
   height: 200px;
   width: 200px;
@@ -29,6 +33,13 @@ body {
   border-style: solid;
   border-color: black;
   border-radius: 20%;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.btn:active {
+  transform: scale(0.95); /* Efeito de clique */
 }
 
 #green {
@@ -47,12 +58,20 @@ body {
   background-color: blue;
 }
 
+/* Feedback visual */
 .pressed {
   box-shadow: 0 0 20px white;
-  background-color: gray;
+  background-color: gray; /* Mudança temporária de cor */
 }
 
+.highlight {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8), 0 0 60px rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+
+/* Game Over */
 .game-over {
   background-color: red;
   opacity: 0.8;
+  transition: background-color 0.5s ease;
 }

@@ -2,6 +2,11 @@
 // touch index.js
 // netstat -ano | findstr "LISTENING"
 
+// install nodemon as npm install -g nodemon
+// -g stands for globally
+// npm root -g to find the package
+// Listing Installed Global Packages => npm list -g --depth=0
+
 import express from "express";
 const app = express();
 const port = 3000;
@@ -9,7 +14,7 @@ const port = 3000;
 app.get("/", (req, res) => {
   //request and response
   console.log(req.rawHeaders);
-  res.send("Hello World!");
+  res.send("<h1> Hello World! <h1>");
 });
 
 app.listen(port, () => {

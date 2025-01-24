@@ -10,12 +10,13 @@ const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post("/submit", (req, res) => {
-  console.log(req.body);
-});
-
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
+});
+
+app.post("/submit", (req, res) => {
+  res.sendStatus(201);
+  console.log(req.body);
 });
 
 app.listen(port, () => {

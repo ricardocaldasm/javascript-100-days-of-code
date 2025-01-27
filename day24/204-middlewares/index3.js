@@ -12,7 +12,7 @@ function logger(req, res, next) {
 app.use(logger);
 
 app.get("/", (req, res) => {
-  res.send("Hello");
+  res.send("<h1>Hello</h1>");
 });
 
 app.listen(port, () => {

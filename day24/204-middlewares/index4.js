@@ -9,17 +9,17 @@ const app = express();
 const port = 3000;
 var bandName = "";
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true })); //middleware to use req.body and see the request
 
 function bandNameGenerator(req, res, next) {
-  console.log(req.body);
+  console.log(req.body); //print the values for the request on post 
   bandName = req.body["street"] + req.body["pet"];
   next();
 }
 
 app.use(bandNameGenerator);
 
-app.get("/", (req, res) => {
+app.get("/", (req, res) => { //show de index.html on localhost: 3000
   res.sendFile(__dirname + "/public/index.html");
 });
 
